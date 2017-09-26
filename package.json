@@ -1,23 +1,24 @@
 {
-  "name": "preact-jsx-chai-match",
-  "version": "0.2.0",
+  "name": "preact-jsx-chai-match-template",
+  "version": "0.2.2",
   "description": "",
   "main": "index.dest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel index.js --out-file index.dest.js --presets=es2015,react"
+    "build": "babel index.js --out-file index.dest.js --presets=es2015,react",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduardoboucas/preact-jsx-chai-match.git"
+    "url": "git+https://github.com/eduardoboucas/preact-jsx-chai-match-template.git"
   },
   "keywords": [],
   "author": "Eduardo Boucas (mail@eduardoboucas.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eduardoboucas/preact-jsx-chai-match/issues"
+    "url": "https://github.com/eduardoboucas/preact-jsx-chai-match-template/issues"
   },
-  "homepage": "https://github.com/eduardoboucas/preact-jsx-chai-match#readme",
+  "homepage": "https://github.com/eduardoboucas/preact-jsx-chai-match-template#readme",
   "dependencies": {
     "html-looks-like": "^1.0.3",
     "preact-render-to-string": "^3.6.3"

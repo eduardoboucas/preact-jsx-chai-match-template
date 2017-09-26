@@ -1,4 +1,4 @@
-# preact-jsx-chai-match
+# preact-jsx-chai-match-template
 
 Use [html-looks-like](https://github.com/staltz/html-looks-like) to assert Preact components in JSX.
 
