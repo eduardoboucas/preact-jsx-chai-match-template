@@ -1,18 +1,19 @@
 {
   "name": "preact-jsx-chai-match",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.dest.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js --out-file index.dest.js --presets=es2015,react"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eduardoboucas/preact-jsx-chai-match.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Eduardo Boucas (mail@eduardoboucas.com)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eduardoboucas/preact-jsx-chai-match/issues"
   },
@@ -20,5 +21,10 @@
   "dependencies": {
     "html-looks-like": "^1.0.3",
     "preact-render-to-string": "^3.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   }
 }

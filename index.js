@@ -9,7 +9,7 @@ export default function assertMatch({Assertion}) {
   Assertion.addMethod('match', function (expectedRaw) {
     const actual = render(this._obj)
     const expected = render(expectedRaw)
-      .replace(/\[\*\]/g, '{{ ... }}')
+      .replace(/\(\.\.\.\)/g, '{{ ... }}')
 
     htmlLooksLike(actual, expected)
   })
