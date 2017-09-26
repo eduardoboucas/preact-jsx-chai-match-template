@@ -6,18 +6,18 @@ Use [html-looks-like](https://github.com/staltz/html-looks-like) to assert Preac
 
 1. Download the module
 
-```
-npm install preact-jsx-chai-match --save-dev
-```
+   ```
+   npm install preact-jsx-chai-match --save-dev
+   ```
 
 1. Add it to Chai
 
-```jsx
-import chai from 'chai'
-import assertMatch from 'preact-jsx-chai-match'
-
-chai.use(assertMatch)
-```
+   ```jsx
+   import chai from 'chai'
+   import assertMatch from 'preact-jsx-chai-match'
+   
+   chai.use(assertMatch)
+   ```
 
 ## Usage
 
