@@ -15,7 +15,7 @@ Use [html-looks-like](https://github.com/staltz/html-looks-like) to assert Preac
    ```jsx
    import chai from 'chai'
    import assertMatch from 'preact-jsx-chai-match'
-   
+
    chai.use(assertMatch)
    ```
 
@@ -55,11 +55,11 @@ const actual = (
   />
 )
 
-const expected = (
+const template = (
   <Component2
     label={mockSchema.label}
   >(...)</Component2>
 )
 
-expect(actual).to.match(expected)
+expect(actual).to.matchTemplate(template)
 ```

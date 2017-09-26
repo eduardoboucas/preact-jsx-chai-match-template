@@ -6,12 +6,12 @@ export default function assertMatch({Assertion}) {
 
   Assertion.__assertMatch = true
 
-  Assertion.addMethod('match', function (expectedRaw) {
+  Assertion.addMethod('matchTemplate', function (templateRaw) {
     const actual = render(this._obj)
-    const expected = render(expectedRaw)
+    const template = render(templateRaw)
       .replace(/\(\.\.\.\)/g, '{{ ... }}')
 
-    htmlLooksLike(actual, expected)
+    htmlLooksLike(actual, template)
   })
 }
 
