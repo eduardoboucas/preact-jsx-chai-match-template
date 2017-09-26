@@ -1,7 +1,7 @@
 {
   "name": "preact-jsx-chai-match-template",
-  "version": "0.2.2",
-  "description": "",
+  "version": "0.2.3",
+  "description": "A method that adds assertions with html-looks-like to Chai for testing Preact components",
   "main": "index.dest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
