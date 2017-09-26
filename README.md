@@ -7,14 +7,14 @@ A method that adds assertions with [html-looks-like](https://github.com/staltz/h
 1. Download the module
 
    ```
-   npm install preact-jsx-chai-match --save-dev
+   npm install preact-jsx-chai-match-template --save-dev
    ```
 
 1. Add it to Chai
 
    ```jsx
    import chai from 'chai'
-   import assertMatch from 'preact-jsx-chai-match'
+   import assertMatch from 'preact-jsx-chai-match-template'
 
    chai.use(assertMatch)
    ```
