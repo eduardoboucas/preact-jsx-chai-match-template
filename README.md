@@ -1,6 +1,6 @@
 # preact-jsx-chai-match-template
 
-Use [html-looks-like](https://github.com/staltz/html-looks-like) to assert Preact components in JSX.
+A method that adds assertions with [html-looks-like](https://github.com/staltz/html-looks-like) to Chai for testing Preact components.
 
 ## Installation
 
@@ -21,45 +21,32 @@ Use [html-looks-like](https://github.com/staltz/html-looks-like) to assert Preac
 
 ## Usage
 
-*Before*
-
 ```jsx
-import {render as renderToString} from 'preact-render-to-string'
-import htmlLooksLike from 'html-looks-like'
+const component = (
+  <div class="container">
+    <button type="button">Previous</button>
 
-const actual = renderToString(
-  <Component1
-    config={mockConfig}
-    schema={mockSchema}
-  />
-)
+    <div class="article">
+      <h1>Hello world</h1>
+      <p>This is a test</p>
+    </div>
 
-const expected = renderToString(
-  <Component2
-    label={mockSchema.label}
-  >
-    {'{{ ... }}'}
-  </Component2>
-)
-
-htmlLooksLike(component, label)
-```
-
-*After*
-
-```jsx
-const actual = (
-  <Component1
-    config={mockConfig}
-    schema={mockSchema}
-  />
+    <button type="button">Next</button>
+  </div>
 )
 
 const template = (
-  <Component2
-    label={mockSchema.label}
-  >(...)</Component2>
+  <div class="container">
+    (...)
+
+    <div class="article">
+      <h1>Hello world</h1>
+      (...)
+    </div>
+
+    (...)
+  </div>
 )
 
-expect(actual).to.matchTemplate(template)
+expect(component).to.matchTemplate(template)
 ```
